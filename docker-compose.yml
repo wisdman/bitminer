@@ -2,7 +2,6 @@ version: '3.3'
 
 services:
   www:
-    restart: unless-stopped
     build: ./nginx
     volumes:
       - ./dist:/www:ro
@@ -15,15 +14,20 @@ services:
     ports:
       - 37.59.226.152:80:80
       - 37.59.226.152:443:443
+    deploy:
+      mode: replicated
+      replicas: 1
 
   ssl:
-    restart: unless-stopped
     build: ./ssl
     volumes:
       - ssl-volume:/etc/letsencrypt
       - acme-volume:/acme
     networks:
       default:
+    deploy:
+      mode: replicated
+      replicas: 1
 
 networks:
   outside:
