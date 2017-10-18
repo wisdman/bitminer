@@ -1,0 +1,64 @@
+
+/**
+ * ======= Page styles =======
+ **/
+
+html {
+  box-sizing: border-box;
+
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+  overflow-y: scroll;
+
+  cursor: default;
+}
+
+body {
+  position: relative;
+
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
+  height: auto;
+  min-height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  /* Default system sans font */
+  font-family: system-ui, sans-serif;
+  font-display: swap;
+
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 1;
+
+  word-wrap: break-word;
+
+  background-color: var(--color-brand);
+  color: var(--color-text);
+
+  overflow: hidden;
+}
+
+body > * {
+  position: relative;
+}
+
+/* Page content wrapper */
+.page-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--indent-base);
+}

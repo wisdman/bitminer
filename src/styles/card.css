@@ -1,0 +1,163 @@
+/*
+ * ======= Card =======
+ */
+
+/* All cards wrapper */
+.card-box {
+  display: grid;
+  grid-gap: var(--indent-base);
+  grid-template-columns: repeat(1, minmax(200px, 400px));
+  grid-auto-rows: minmax(250px, auto);
+  justify-content: center;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, minmax(200px, 400px));
+  }
+
+  @media (min-width: 1100px) {
+    grid-gap: var(--indent-doble);
+    grid-template-columns: repeat(4, minmax(200px, 400px));
+  }
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+
+  @media (min-width: 900px) {
+    opacity: .83;
+    transition: .5s opacity;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  & picture {
+    display: block;
+    flex: 1 1 auto;
+    width: 100%;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & span {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 10px;
+
+    white-space: nowrap;
+    line-height: 1.618;
+  }
+
+  & .title {
+    display: block;
+    font-size: 22px;
+  }
+
+  & .short {
+    display: block;
+    font-weight: 100;
+  }
+
+  & .price {
+    display: block;
+    font-weight: 600;
+  }
+}
+
+
+/* Datail block */
+.detail {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: var(--indent-base);
+
+  & figcaption {
+    margin-top: var(--indent-base);
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1000px) {
+    flex-direction: row;
+
+    & figcaption {
+      margin-top: 0;
+      margin-left: var(--indent-base);
+    }
+  }
+
+  & picture {
+    align-self: center;
+  }
+
+  & .title {
+    flex: 0 0 100%;
+  }
+
+  & .short {
+    flex: 0 0 100%;
+    font-weight: 100;
+  }
+
+  & .price {
+    flex: 1 1 auto;
+    margin: 1em auto 1em 0;
+    font-size: 22px;
+    white-space: nowrap;
+  }
+
+  & .order {
+    flex: 0 0 auto;
+    align-self: center;
+    padding: var(--indent-base) 2em;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+
+
+    text-align: center;
+    transition: background-color .2s ease-in-out 0s;
+    background-color: transparent;
+
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    color: var(--color-primary);
+
+    white-space: nowrap;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--color-primary);
+    }
+  }
+
+  & p {
+    flex: 0 0 100%;
+  }
+}
+
+/* Datail block visibility */
+.detail:target {
+  display: flex;
+}
+
+.detail:target ~ .card-box {
+  display: none;
+}

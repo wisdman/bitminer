@@ -1,0 +1,19 @@
+/*
+ * ======= Particles decoration =======
+ */
+
+.particles {
+  display: block;
+  position: fixed;
+
+  top: -10vh;
+  left: -10vw;
+  width: 120vw;
+  height: 120vh;
+
+  & canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

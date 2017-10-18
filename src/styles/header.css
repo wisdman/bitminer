@@ -1,0 +1,255 @@
+/**
+ * ======= Header box =======
+ **/
+
+.header {
+  display: block;
+  color: var(--color-light);
+  width: 100%;
+
+  /* Page width wrapper */
+  & > .wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Top logo */
+  & .logo {
+    user-select: none;
+
+    display: block;
+    position: relative;
+
+    margin: 10px auto;
+    height: 30px;
+
+    @media (min-width: 900px) {
+      margin: 15px auto;
+      height: 40px;
+    }
+
+    & img {
+      height: inherit;
+      width: auto;
+    }
+
+    &:after {
+      content: attr(title);
+      display: block;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+
+      font-size: 9px;
+      font-weight: 100;
+      text-transform: lowercase;
+      text-align: center;
+      white-space: nowrap;
+
+      @media (min-width: 900px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  /* Navigation visibility status checkbox */
+  & .nav-visibility {
+    display: none;
+  }
+
+  /* Mobile menu hamburger icon */
+  & .nav-icon {
+    user-select: none;
+
+    display: block;
+    position: absolute;
+    left: var(--indent-base);
+    top: 10px;
+
+    height: 29px;
+    width: 29px;
+
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      display:block;
+      box-sizing: content-box;
+
+      position: absolute;
+      top: 5px;
+      height: 13px;
+      width: 100%;
+
+      border-top: 3px solid currentColor;
+      border-bottom: 3px solid currentColor;
+      background-color: transparent;
+
+      transition: .1s transform 0s, 0s background-color .1s, 0s border .1s, .1s height .1s, .1s top .1s;
+    }
+
+    &:after {
+      content: "";
+      display:block;
+
+      position: absolute;
+      top: 13px;
+      height: 3px;
+      width: 100%;
+
+      background-color: currentColor;
+
+      transition: .1s transform 0s;
+    }
+
+    @media (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  /* Mobile menu hamburger icon to cross transformation */
+  & .nav-visibility:checked ~ .nav-icon {
+    &:before {
+      height: 3px;
+      top: 13px;
+      border-top-width: 0px;
+      border-bottom-width: 0px;
+
+      background-color: currentColor;
+
+      transform: rotate(-45deg);
+
+      transition: .1s height 0s, .1s top 0s, 0s border .1s, 0s background-color .1s, .1s transform .1s;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+
+      transition: .1s transform .1s;
+    }
+
+    @media (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  /* Phone icon and nuber */
+  & .phone {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: var(--indent-base);
+
+    height: 29px;
+    width: 29px;
+
+    color: var(--color-primary);
+
+    & svg {
+      user-select: none;
+      height: inherit;
+      width: inherit;
+
+      & path {
+        fill: currentColor;
+      }
+    }
+
+    & span {
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      height: auto;
+      width: auto;
+      top: 30px;
+
+      & svg {
+        display: none;
+      }
+
+      & span {
+        display: block;
+        font-size: 26px;
+        font-weight: 100;
+      }
+    }
+  }
+
+  /* Navigation */
+  & .nav {
+    user-select: none;
+
+    flex: 0 0 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+    & > .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: -110%;
+      opacity: .3;
+      transition: .2s margin-top, .2s opacity;
+    }
+
+    & .item {
+      text-transform: uppercase;
+      letter-spacing: .03em;
+
+      margin: 20px auto 0;
+
+      padding-bottom: .1em;
+      border-bottom: 1px solid currentColor;
+
+      &:hover {
+        border-bottom-color: var(--color-primary);
+      }
+    }
+
+    @media (min-width: 900px) {
+      & > .wrapper {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0%;
+        opacity: 1;
+      }
+
+      & .item {
+        margin-left: var(--indent-base);
+        margin-right: var(--indent-base);
+      }
+    }
+  }
+
+  /* Navigation menu show on mobile */
+  & .nav-visibility:checked ~ .nav {
+    & > .wrapper {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  /* Social icons */
+  & .social {
+    margin: 25px auto 0;
+
+    @media (min-width: 900px) {
+      margin: 0 auto;
+      position: absolute;
+      top: 30px;
+      left: var(--indent-base);
+    }
+  }
+}
+
+
+
+
+

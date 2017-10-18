@@ -1,0 +1,21 @@
+---
+title: Фермы
+---
+
+{% extends "layouts/layout.html" %}
+
+{% block hero %}
+  <h1>{{ title }}</h1>
+  <h2>Фабрика валюты</h2>
+{% endblock %}
+
+{% block content %}
+  {% for data in FARM %}
+    {{ mixins.detail(data) }}
+  {% endfor %}
+  <div class="card-box">
+    {% for data in FARM %}
+      {{ mixins.card(data) }}
+    {% endfor %}
+  </div>
+{% endblock%}

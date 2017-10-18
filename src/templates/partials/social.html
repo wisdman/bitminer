@@ -1,0 +1,9 @@
+<nav class="social">
+  {% for link in social %}
+    <a href="{{ link.href }}" target="_blank" title="{{ link.title }}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="{{ link.path }}"></path>
+      </svg>
+    </a>
+  {% endfor %}
+</nav>

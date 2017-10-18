@@ -1,0 +1,75 @@
+{
+  "name": "bitminer",
+  "version": "0.1.0",
+  "description": "Mining hardware shop",
+  "author": "Wisdman <wisdman@ajaw.it> (https://github.com/wisdman)",
+  "contributors": [
+    {
+      "name": "Dmitriy Poliakov",
+      "url": "https://github.com/wisdman",
+      "email": "wisdman@ajaw.it"
+    }
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wisdman/bitminer.git"
+  },
+  "homepage": "https://github.com/wisdman/bitminer",
+  "bugs": "https://github.com/wisdman/bitminer/issues",
+  "engines": {
+    "node": ">=8.7.0",
+    "npm": ">=5.4.0"
+  },
+  "lang": "ru-RU",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Firefox versions"
+  ],
+  "browser": {},
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "build:production": "NODE_ENV=production npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/gsap": "^1.19.1",
+    "@types/node": "^8.0.34",
+    "autoprefixer": "^7.1.5",
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "front-matter": "^2.2.0",
+    "html-minifier": "^3.5.5",
+    "js-yaml": "^3.10.0",
+    "json-loader": "^0.5.7",
+    "node-zopfli": "^2.0.2",
+    "nunjucks": "^3.0.1",
+    "postcss": "^6.0.13",
+    "postcss-csso": "^3.0.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-discard-font-face": "^3.0.0",
+    "postcss-loader": "^2.0.8",
+    "postcss-nesting": "^4.2.1",
+    "postcss-selector-matches": "^3.0.1",
+    "postcss-selector-not": "^3.0.1",
+    "raw-loader": "^0.5.1",
+    "source-map-loader": "^0.2.2",
+    "svgo": "^0.7.2",
+    "svgo-loader": "^1.2.1",
+    "typescript": "^2.5.3",
+    "webpack": "^3.7.1",
+    "webpack-sources": "^1.0.1"
+  },
+  "dependencies": {
+    "barba.js": "^1.0.0",
+    "core-js": "^2.5.1",
+    "gsap": "^1.20.3",
+    "particlesjs": "^2.0.2"
+  }
+}

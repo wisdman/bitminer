@@ -1,0 +1,44 @@
+
+/* Reset all box sizing */
+*, *::before, *::after {
+  outline: none; /* TODO: It is a bad idea. Need to fix in the future */
+  box-sizing: border-box;
+}
+
+/* Hede overflowed svg */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Remove touch delay  */
+a, area, button, [role="button"], input, label, select, summary, textarea {
+  touch-action: manipulation;
+}
+
+/* Cursor pointer */
+a, button, [type="button"], [type="reset"], [type="submit"], [type="file"] {
+  cursor: pointer;
+}
+
+/* Fonts and sizes reset */
+h1, h2, h3, h4, h5, p, a,
+button, input, optgroup, select, textarea {
+  font: inherit;
+  font-size: 100%;
+  line-height: 1;
+
+  text-transform: inherit;
+  text-decoration: inherit;
+
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+
+  background: none transparent;
+  color: inherit;
+}
+
+/* Force block elements */
+img {
+  display: block;
+}

@@ -1,0 +1,51 @@
+/*
+ * ======= Social links =======
+ */
+
+.social {
+  user-select: none;
+
+  display: flex;
+
+  & a {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: var(--color-primary);
+    color: var(--color-light);
+
+    margin-left: var(--indent-base);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    & svg {
+      width: 20px;
+      height: 20px;
+
+      & path {
+        fill: currentColor;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    & a {
+      width: 28px;
+      height: 28px;
+
+      & svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

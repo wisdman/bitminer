@@ -1,0 +1,11 @@
+FARM:
+  - id: rig-1
+    title: RIG-1
+    short: 1 000 000 sol/s
+    price: 1 000 000 ₽
+    description: Супер-пупер риг
+  - id: rig-1
+    title: RIG-2
+    short: 1 000 000 sol/s
+    price: 1 000 000 ₽
+    description: Супер-пупер риг

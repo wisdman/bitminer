@@ -1,0 +1,3 @@
+# bitminer.com
+User-agent: *
+ Host: bitminer.com

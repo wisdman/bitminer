@@ -1,0 +1,112 @@
+{% import "partials/mixins.html" as mixins %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/svg/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="/favicon.png" sizes="192x192" type="image/png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <link rel="mask-icon" href="/svg/favicon.svg" type="image/svg+xml" color="#24292e">
+
+    {% for item in CSS %}
+      <link type="text/css" href="{{ item }}" rel="stylesheet">
+    {% endfor %}
+
+    {% for item in JS %}
+      <script type="text/javascript" src="{{ item }}" defer="defer"></script>
+    {% endfor %}
+
+    {% include "partials/meta-tags.html" %}
+  </head>
+  <body>
+    <div class="particles">
+      <canvas id="particles"></canvas>
+    </div>
+
+    <!-- begin header -->
+    <header class="header">
+      <div class="page-wrapper wrapper">
+        <input class="nav-visibility" id="nav-visibility" type="checkbox">
+        <label class="nav-icon" for="nav-visibility"></label>
+        <a class="logo" href="/" title="Технологии производства денег">
+          <img src="/svg/logo.svg" alt="BitMiner">
+        </a>
+        <nav class="nav">
+          <div class="wrapper">
+            {% for page in headerPages %}
+              <a class="item" href="/{{ page.link }}">{{ page.title }}</a>
+            {% endfor %}
+            {% include "partials/social.html" %}
+          </div>
+        </nav>
+        <a class="phone" href="tel:{{phone}}">
+          <svg viewBox="0 0 24 24">
+            <path d="M18.48 22.93l-1.2.65C10.32 27.2-1.8 6.08 5.02 2.1l1.15-.64L9.9 7.93l-1.15.63c-2.07 1.25 2.76 9.7 4.88 8.55l1.17-.63 3.7 6.47zM8.68 0l-1.7.97 3.73 6.47 1.7-.97L8.67 0zm8.6 15l-1.68.97 3.72 6.47 1.68-.98L17.3 15z"></path>
+          </svg>
+          <span>{{phone}}</span>
+        </a>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <div id="barba-wrapper">
+      <div class="barba-container">
+
+        <!-- begin hero -->
+        <div class="hero">
+          <div class="content">
+            {% block hero %}{% endblock %}
+          </div>
+          <div class="decor">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path d="M0,0 L 70,100 100,50 100,100 0,100 Z"></path>
+            </svg>
+          </div>
+        </div>
+        <!-- end hero -->
+
+        <!-- begin main -->
+        <main class="main">
+          <div class="page-wrapper">
+            {% block content %}{% endblock %}
+          </div>
+        </main>
+        <!-- end main -->
+
+      </div>
+    </div>
+
+    <!-- begin footer -->
+    <footer class="footer">
+      <div class="decor">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M0,0 L 100,0 30,100 0,50 Z"></path>
+        </svg>
+      </div>
+      <div class="page-wrapper wrapper">
+        <div class="left">
+          <a class="logo" href="/" title="Технологии производства денег">
+            <img src="/svg/logo.svg" alt="BitMiner">
+          </a>
+          <a class="phone" href="tel:{{phone}}">{{phone}}</a>
+          <a class="email" href="mailto:{{email}}">{{email}}</a>
+        </div>
+        <nav class="nav">
+          {% for page in footerPages %}
+            <a class="item" href="/{{ page.link }}">{{ page.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+      <div class="copy">BitMiner&nbsp;&copy;&nbsp;2017<br>При использовании материалов сайта ссылка обязательна</div>
+    </footer>
+    <!-- end footer -->
+
+
+  </body>
+</html>

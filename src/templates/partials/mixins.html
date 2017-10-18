@@ -1,0 +1,27 @@
+{% macro card(data) %}
+<a class="card" href="#{{ data.id }}">
+  <picture>
+    <img src="/img/{{ data.id }}.jpg" alt="{{ data.title }}">
+  </picture>
+  <span class="title">{{ data.title }}</span>
+  <span class="short">{{ data.short }}</span>
+  <span class="price">{{ data.price }}</span>
+</a>
+{% endmacro %}
+
+{% macro detail(data) %}
+<figure id="{{ data.id }}" class="detail">
+  <picture>
+    <img src="/img/{{ data.id }}.jpg" alt="{{ data.title }}">
+  </picture>
+  <figcaption>
+    <h4 class="title">{{ data.title }}</h4>
+    <h5 class="short">{{ data.short }}</h5>
+    <span class="price">{{ data.price }}</span>
+    <button class="order">
+      <span>Заказать</span>
+    </button>
+    <p>{{ data.description }}</p>
+  </figcaption>
+</figure>
+{% endmacro %}

@@ -1,0 +1,39 @@
+version: '3.3'
+
+services:
+  www:
+    build: ./nginx
+    volumes:
+      - ./dist:/www:ro
+      - ssl-volume:/etc/letsencrypt:ro
+      - acme-volume:/acme
+    networks:
+      default:
+      outside:
+        ipv6_address: 2001:41d0:303:1f89:0:e011:3d20:152
+    ports:
+      - 37.59.226.152:80:80
+      - 37.59.226.152:443:443
+    deploy:
+      mode: replicated
+      replicas: 1
+
+  ssl:
+    build: ./ssl
+    volumes:
+      - ssl-volume:/etc/letsencrypt
+      - acme-volume:/acme
+    networks:
+      default:
+    deploy:
+      mode: replicated
+      replicas: 1
+
+networks:
+  outside:
+    external: true
+
+volumes:
+  data-volume:
+  ssl-volume:
+  acme-volume:
