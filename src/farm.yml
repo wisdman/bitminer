@@ -1,11 +1,12 @@
 FARM:
-  - id: rig-1
-    title: RIG-1
-    short: 1 000 000 sol/s
-    price: 1 000 000 ₽
-    description: Супер-пупер риг
-  - id: rig-1
-    title: RIG-2
-    short: 1 000 000 sol/s
-    price: 1 000 000 ₽
-    description: Супер-пупер риг
+  - id: pandaminer-b3-plus
+    title: PandaMiner B3 Plus
+    short: 220 MH/s GPU
+    price: 216 450 ₽
+    description: "<p>Hash Rate 220MH/s (ETH), 2150H/S (Zcash), 5890H/S (XMR). Variation of ±5% is expected Power Consumption 1250W +10% (ETH), 1050W+10%(Zcash), 1120W+10% (XMR) (on the wall, with PandaMiner's customized power, 93% efficiency, 25°C ambient temp)</p><ul><li>Rated Voltage 12.4-12.6V</li><li>Chips per unit 8 x RX470</li><li>Dimensions 490mm(L) x 280mm(W) x 170mm(H)</li><li>Cooling 6x fans;</li><li>Operating Temperature 0°C to 40°C</li><li>Network Connection Ethernet</li><li>CPU Inter(R) Celeron(R) CPU 3215U @1.70 GHZ</li><li>Installed memory (RAM) 4GB</li><li>System type 64-bit operating system, x64-based processor</li><li>Operation system Windows 10</li></ul>"
+
+  - id: pandaminer-b5-plus
+    title: PandaMiner B5 Plus
+    short: 110 MH/s GPU
+    price: 120 510 ₽
+    description: "<p>Технические характеристики:</p><ul><li>Hash Rate 110MH/s (ETH)</li><li>Power Consumption 800W +10% (ETH)</li><li>Rated Voltage 12.4-12.6V</li><li>Chips per unit 8 x RX460</li><li>Dimensions 490mm(L) x 280mm(W) x 170mm(H)</li><li>Cooling 6x fans;</li><li>Operating Temperature 0°C to 40°C</li><li>Network Connection Ethernet</li><li>CPU Inter(R) Celeron(R) CPU 3215U @1.70 GHZ</li><li>Installed memory (RAM) 4GB</li><li>System type 64-bit operating system, x64-based processor</li><li>Operation system Windows 10</li></ul>"

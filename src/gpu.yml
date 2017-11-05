@@ -1,46 +1,48 @@
 GPU:
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
-  - id: gtx-1090-ti
-    title: GTX 1090 Ti
-    short: by NVidia
-    price: 50 000 ₽
-    description: Лидирующий китайский производитель майнеров BITMAIN представляет новое поколение своего оборудования для добычи биткоинов
+  - id: msi-1050ti-4g
+    title: MSI 1050TI 4G
+    short: NVIDIA GeForce GTX 1050 Ti
+    price: 14 850 ₽
+    description: "<p>Коротко о товаре</p><ul><li>видеокарта NVIDIA GeForce GTX 1050 Ti</li><li>4096 Мб видеопамяти GDDR5</li><li>частота ядра/памяти: 1379/7108 МГц</li><li>разъемы DVI, HDMI, DisplayPort</li><li>поддержка DirectX 12, OpenGL 4.5</li><li>работа с 3 мониторами</li></ul>"
+
+  - id: msi-1060-3g
+    title: MSI 1060 3G
+    short: NVIDIA GeForce GTX 1060
+    price: 18 610 ₽
+    description: "<p>Коротко о товаре</p><ul><li>видеокарта NVIDIA GeForce GTX 1060</li><li>3072 Мб видеопамяти GDDR5</li><li>частота ядра/памяти: 1594/8108 МГц</li><li>разъемы DVI, HDMI, DisplayPort x3</li><li>поддержка DirectX 12, OpenGL 4.5</li><li>работа с 4 мониторами</li></ul>"
+
+  - id: msi-1060-6g
+    title: MSI 1060 6G
+    short: NVIDIA GeForce GTX 1060
+    price: 24 030 ₽
+    description: "<p>Коротко о товаре</p><ul><li>видеокарта NVIDIA GeForce GTX 1060</li><li>6144 Мб видеопамяти GDDR5</li><li>частота ядра/памяти: 1594/8100 МГц</li><li>разъемы DVI, HDMI, DisplayPort x3</li><li>поддержка DirectX 12, OpenGL 4.5</li><li>работа с 4 мониторами</li></ul>"
+
+  - id: msi-1060-gaming-x-6g
+    title: MSI 1060 Gaming X 6G
+    short: NVIDIA GeForce GTX 1060
+    price: 24 000 ₽
+    description: "<p>Коротко о товаре</p><ul><li>видеокарта NVIDIA GeForce GTX 1060</li><li>6144 Мб видеопамяти GDDR5</li><li>частота ядра/памяти: 1594/8100 МГц</li><li>разъемы DVI, HDMI, DisplayPort x3</li><li>поддержка DirectX 12, OpenGL 4.5</li><li>работа с 4 мониторами</li></ul>"
+
+  - id: msi-1070-duke
+    title: MSI 1070 Duke 8G
+    short: NVIDIA GeForce GTX 1070
+    price: 39 405 ₽
+    description: "<p>Коротко о товаре</p><ul><li>Количество ядер 1920 Units</li><li>Частота ядра (МГц) 1797 / 1607 MHz</li><li>Частота памяти (МГц) 8108 MHz</li><li>Объем памяти (МБ) 8GB</li><li>Подключение дисплеев: 4</li></ul>"
+
+  - id: msi-1080-gaming-x-8g
+    title: MSI 1080 Gaming X 8G
+    short: NVIDIA GeForce GTX 1080
+    price: 40 590 ₽
+    description: "<p>Коротко о товаре</p><ul><li>видеокарта NVIDIA GeForce GTX 1080</li><li>8192 Мб видеопамяти GDDR5X</li><li>частота ядра/памяти: 1708/10108 МГц</li><li>поддержка режима SLI/CrossFire</li><li>разъемы DVI, HDMI, DisplayPort x3</li><li>поддержка DirectX 12, OpenGL 4.5</li><li>работа с 4 мониторами</li></ul>"
+
+  - id: msi-1080ti-aero-11g-oc
+    title: MSI 1080TI Aero 11G OC
+    short: NVIDIA GeForce GTX 1080 Ti
+    price: 60 100 ₽
+    description: "<p>Коротко о товаре</p><ul><li>видеокарта NVIDIA GeForce GTX 1080 Ti</li><li>11264 Мб видеопамяти GDDR5X</li><li>частота ядра/памяти: 1506/11016 МГц</li><li>поддержка режима SLI/CrossFire</li><li>разъемы HDMI, DisplayPort x3</li><li>поддержка DirectX 12, OpenGL 4.5</li><li>работа с 4 мониторами</li></ul>"
+
+  - id: gainwar-p106-6g
+    title: Gainwar P106 6G
+    short: NVIDIA GeForce GTX 1060
+    price: 16 762 ₽
+    description: "<p>Коротко о товаре</p><ul><li>видеокарта NVIDIA GeForce GTX 1060</li><li>6144 Мб видеопамяти GDDR5</li><li>частота ядра/памяти: 1506/8000 МГц</li><li>разъемы DVI, HDMI, DisplayPort x3</li><li>поддержка DirectX 12, OpenGL 4.5</li><li>работа с 4 мониторами</li></ul>"

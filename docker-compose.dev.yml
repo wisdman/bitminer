@@ -1,0 +1,30 @@
+version: '3.3'
+
+services:
+  www:
+    restart: unless-stopped
+    build: ./nginx
+    volumes:
+      - ./dist:/www:ro
+      - ./nginx/server.dev.conf:/etc/nginx/server.conf:ro
+      - ssl-volume:/etc/letsencrypt:ro
+      - acme-volume:/acme
+    networks:
+      default:
+    ports:
+      - 80:80
+      - 443:443
+
+  ssl:
+    restart: unless-stopped
+    build: ./ssl
+    volumes:
+      - ssl-volume:/etc/letsencrypt
+      - acme-volume:/acme
+    networks:
+      default:
+
+volumes:
+  data-volume:
+  ssl-volume:
+  acme-volume:

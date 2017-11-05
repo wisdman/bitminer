@@ -5,7 +5,7 @@
 /* All cards wrapper */
 .card-box {
   display: grid;
-  grid-gap: var(--indent-base);
+  grid-gap: var(--indent-doble);
   grid-template-columns: repeat(1, minmax(200px, 400px));
   grid-auto-rows: minmax(250px, auto);
   justify-content: center;
@@ -83,7 +83,7 @@
 .detail {
   display: none;
   flex-direction: column;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   padding-top: var(--indent-base);
 
   & figcaption {
@@ -103,7 +103,15 @@
   }
 
   & picture {
-    align-self: center;
+    position: relative;
+
+    & img {
+      max-width: 100%;
+
+      @media (min-width: 1000px) {
+        max-width: 50vw;
+      }
+    }
   }
 
   & .title {

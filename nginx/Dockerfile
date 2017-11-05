@@ -12,7 +12,6 @@ RUN rm -Rf /etc/nginx \
  && apk del .build-deps
 
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY server.conf /etc/nginx/server.conf
 
 VOLUME /etc/letsencrypt
 VOLUME /acme

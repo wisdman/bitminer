@@ -83,3 +83,16 @@ p {
   line-height: 1.618;
   margin-bottom: 1em;
 }
+
+ul, ol {
+  margin: 0;
+  padding-left: 20px;
+
+  @media (min-width: 900px) {
+    padding-left: 40px;
+  }
+}
+
+li {
+  line-height: 1.618;
+}

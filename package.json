@@ -60,8 +60,8 @@
     "postcss-selector-not": "^3.0.1",
     "raw-loader": "^0.5.1",
     "source-map-loader": "^0.2.2",
-    "svgo": "^0.7.2",
-    "svgo-loader": "^1.2.1",
+    "svgo": "^1.0.2",
+    "svgo-loader": "^2.0.0",
     "typescript": "^2.5.3",
     "webpack": "^3.7.1",
     "webpack-sources": "^1.0.1"

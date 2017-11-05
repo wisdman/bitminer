@@ -8,7 +8,7 @@
   --font-size: 16px;
 
   /* Idents */
-  --indent-base: 15px;
+  --indent-base: 20px;
   --indent-doble: calc( var(--indent-base) * 2 );
 
 /**

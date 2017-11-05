@@ -15,7 +15,7 @@ const frontMatter = require('front-matter')
 const nunjucks = require('nunjucks')
 
 // === File patterns ===
-const HTML_PATTERN = /\.html$/
+const HTML_PATTERN = /^[^_].*\.html$/
 const CSS_PATTERN = /\.css$/
 const JS_PATTERN = /\.js$/
 const JSON_PATTERN = /\.json$/

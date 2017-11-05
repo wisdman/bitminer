@@ -6,6 +6,7 @@ services:
     build: ./nginx
     volumes:
       - ./dist:/www:ro
+      - ./nginx/server.conf:/etc/nginx/server.conf:ro
       - ssl-volume:/etc/letsencrypt:ro
       - acme-volume:/acme
     networks:
