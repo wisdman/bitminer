@@ -29,3 +29,7 @@ import './hp-2250w.jpg'
 // === FARM ===
 import './pandaminer-b3-plus.jpg'
 import './pandaminer-b5-plus.jpg'
+
+// === Carousel ===
+import './antminer.png'
+import './bw-l21.png'

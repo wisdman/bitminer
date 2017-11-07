@@ -269,6 +269,7 @@ module.exports = {
         PATH('./src/gpu.yml'),
         PATH('./src/psu.yml'),
         PATH('./src/farm.yml'),
+        PATH('./src/carousel.yml'),
       ],
       options: {
         autoescape: true,

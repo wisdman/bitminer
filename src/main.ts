@@ -5,12 +5,14 @@
 import { Context, Module } from './modules/module'
 import {
   BarbaModule,
+  CarouselModule,
   ParticlesModule,
 } from './modules'
 
 const context: Context = {}
 
 context['BarbaModule'] = new BarbaModule(context)
+context['CarouselModule'] = new CarouselModule(context)
 context['ParticlesModule'] = new ParticlesModule(context)
 
 function main() {

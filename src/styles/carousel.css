@@ -1,0 +1,76 @@
+
+.tns-outer {
+  position: relative;
+}
+
+.tns-nav {
+  display: flex;
+
+  position: absolute;
+  bottom: -150px;
+  left: 70%;
+
+  transform: translateX(-50%);
+}
+
+.tns-nav button {
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  margin: 0 15px;
+}
+
+.tns-nav button.tns-nav-active {
+  background-color: currentColor;
+}
+
+.tns-item {
+  & img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  & .title {
+    display: block;
+    color: #fff;
+    text-align: center;
+
+    font-size: 26px;
+    line-height: 26px;
+
+    @media (min-width: 900px) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  & .short {
+    display: block;
+    color: #ddd;
+    text-align: center;
+
+    margin: 10px 0;
+  }
+
+  & .price {
+    display: block;
+    color: var(--color-primary);
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 18px;
+
+    @media (min-width: 900px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}

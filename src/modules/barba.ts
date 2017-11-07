@@ -5,5 +5,6 @@ export class BarbaModule extends Module {
   init() {
     Barba.Prefetch.init()
     Barba.Pjax.start()
+    Barba.Dispatcher.on('transitionCompleted', () => this.emit('transitionCompleted'))
   }
 }

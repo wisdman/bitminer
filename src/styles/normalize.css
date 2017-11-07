@@ -21,7 +21,7 @@ a, button, [type="button"], [type="reset"], [type="submit"], [type="file"] {
 }
 
 /* Fonts and sizes reset */
-h1, h2, h3, h4, h5, p, a, figure,
+h1, h2, h3, h4, h5, h6, p, a, figure,
 button, input, optgroup, select, textarea {
   font: inherit;
   font-size: 100%;

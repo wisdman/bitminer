@@ -1,0 +1,26 @@
+CAROUSEL:
+  - id: anminer-s9
+    img: antminer.png
+    title: ANTMINER L3+
+    short: 504 MH/s (Scrypt Miner)
+    price: 154 000 ₽
+
+  - id: bw-l21
+    img: bw-l21.png
+    title: BW-L21
+    short: 550 MH/s (Scrypt Miner)
+    price: 166 000 ₽
+
+  - id: anminer-l3
+    img: antminer.png
+    title: ANTMINER S9
+    short: 13,5 TH/s (SHA256 - Bitcoin Miner)
+    price: 126 000 ₽
+
+  - id: antminer-d3
+    img: antminer.png
+    title: ANTMINER D3
+    short: 15 GH/s (X11 - Dash Miner)
+    price: 106 000 ₽
+
+

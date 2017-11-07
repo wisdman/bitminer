@@ -1,6 +1,8 @@
 // === Micro normalization and defaults ===
 import './normalize.css'
 
+
+
 // === Fonts ===
 import './system-font.css'
 // import './proxima-nova-font.css'
@@ -26,3 +28,7 @@ import './social.css'
 
 // === Items ===
 import './card.css'
+
+// === Carusel ===
+import 'tiny-slider/dist/tiny-slider.css'
+import './carousel.css'
